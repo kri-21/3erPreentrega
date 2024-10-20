@@ -23,13 +23,16 @@ header {
         li {
             color: rgb(93, 93, 92);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            & :hover{ color: rgb(24, 226, 226);}
+            & :hover{ 
+                color: rgb(24, 226, 226);
+                font-weight: bold ;
+            }
         }
     
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
 
     header {
         height: 100px;
@@ -74,14 +77,17 @@ header {
                     flex-direction: column;
                     justify-content: space-evenly;
                     align-items: center;
-                    & :hover{ color: rgb(24, 226, 226);}
+                    & :hover{ 
+                        color: rgb(24, 226, 226);
+                        font-weight: bold ;
+                    }
                 }
             }
         }
     }
 
 }
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 769px){
     #smnav{display: none;}
     header{height: 150px;
         ul{

@@ -1,52 +1,67 @@
-@media only screen and (max-width:700px){
-    main {
-            height: auto;
-            grid-template-columns: 90%;
-            justify-content: center;
-        
-    
-        #blog-sm {
-            display: flex;
-            max-width: 650px;
-            max-height: fit-content;
-            grid-template-columns: 100%;
-            align-items: center;
-            justify-content: center;
-        }
+main {
+    height: auto;
+    grid-template-columns: 90%;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    #blog-sm{
+        display: flex;
+        max-height: fit-content;
+        align-items: center;
+        justify-content: center;
         #star {
             padding-left: 15px;
             padding-top: 15px;
         }
         .card {justify-content: center;}
-    
-        #footerm {
-            display: none;
+        .btn-link {
+            text-decoration: none;
+        }
+    }
+    #isologo{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:700px){
+    main {
+        .container-blog{
+            max-width: 600px;
+            margin: 0 5% 0 5%;
+            justify-items: center;
+        }
+        #blog-sm {
+            grid-template-columns: 90%;
         }
     }
 }
 
-@media only screen and (min-width:700px){
+@media only screen and (min-width:700px) and (max-width:1050px){
     main {
-            height: auto;
-            grid-template-columns: 90%;
-            justify-content: center;
-        
-    
+        .container-blog{
+            max-width: 900px;
+            margin: 0 5% 0 5%;
+            justify-items: center;
+        }
+
         #blog-sm {
-            display: flex;
-            max-height: fit-content;
-            grid-template-columns: 100%;
-            align-items: center;
-            justify-content: center;
-        }
-        #star {
-            padding-left: 15px;
-            padding-top: 15px;
-        }
-        .card {justify-content: center;}
-    
-        #footer {
-            display: none;
+            grid-template-columns: 90%;
         }
     }
 }
+@media only screen and (min-width:1051px) {
+    main {
+        .container-blog{
+            max-width: 2000px;
+            margin: 0 15% 0 15%;
+            justify-items: center;
+        }
+
+        #blog-sm {
+            grid-template-columns: 70%;
+        }
+    }
+}
+

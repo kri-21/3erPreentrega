@@ -9,6 +9,7 @@
     height: 45px;
     width: 175px;
     justify-content: space-evenly;
+    &:hover{color:rgb(24, 226, 226);}
 }
 
 title {
@@ -47,17 +48,38 @@ h2 {
 }
 
 h3 {
+    font-size: 26px;
     font-family: serif;
     font-style: italic;
-    color: darkgrey;
+    color: rgb(93, 93, 92);
     text-align: center;
 }
 
 h4 {
-    font-size: medium;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(93, 93, 92);
+    text-align: center;
 }
-#isologo {max-height: 50px;
-    padding-left: 45%;}        
-    
+h5{
+    font-size: 16px;
+    text-align: center;
+}
+
+#isologo {max-height: 50px;}
+
+.containerpage{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.text-center-cursiva{
+    font-style: italic;
+}
+
+#buttonform {
+    color: #e97aaa;
+    font-size: 16px;
+    min-height: 40px;
+    &:hover{color:rgb(24, 226, 226);}
+}
